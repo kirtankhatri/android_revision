@@ -7,13 +7,104 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingHorizontal="50dp"
+        >
+        <Button
+            android:id="@+id/goToConnectivityBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Connectivity Page"
+            style="@style/Widget.AppCompat.Button"
+            />
+        <Button
+            android:id="@+id/goToBroadcastReceiverBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="BroadcastReceiver Page"
+            style="@style/Widget.AppCompat.Button"
+            />
+        <Button
+            android:id="@+id/goToAlarmManagerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Alarm Manager Page"
+            style="@style/Widget.AppCompat.Button"
+            />
+        <Button
+            android:id="@+id/goToWakeLockPageBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="WakeLock Page"
+            style="@style/Widget.AppCompat.Button"
+            />
+        <Button
+            android:id="@+id/goToTextToSpeechPageBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Text To Speech Page"
+            style="@style/Widget.AppCompat.Button"
+            />
+        <Button
+            android:id="@+id/goToURLImageDownloadPageBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="URL Image Download Page"
+            style="@style/Widget.AppCompat.Button"
+            />
+        <Button
+            android:id="@+id/goToImageCapturePageBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Image Capture"
+            style="@style/Widget.AppCompat.Button"
+            />
+        <Button
+            android:id="@+id/goToVideoPlaybackPageBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Video Playback Page"
+            style="@style/Widget.AppCompat.Button"
+            />
+        <Button
+            android:id="@+id/goToSensorsPageBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Sensors Page"
+            style="@style/Widget.AppCompat.Button"
+            />
+        <Button
+            android:id="@+id/goToAnimationPageBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Animation Page"
+            style="@style/Widget.AppCompat.Button"
+            />
+        <Button
+            android:id="@+id/goToGoogleMapPageBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Google Map Page"
+            style="@style/Widget.AppCompat.Button"
+            />
+        <Button
+            android:id="@+id/goToWebViewPageBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="WebView Page"
+            style="@style/Widget.AppCompat.Button"
+            />
+        <Button
+            android:id="@+id/goToPostsPage"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Posts Page"
+            style="@style/Widget.AppCompat.Button"
+            />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

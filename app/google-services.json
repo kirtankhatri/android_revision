@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "357972791917",
+    "project_id": "androidclg-ba441",
+    "storage_bucket": "androidclg-ba441.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357972791917:android:2a661f25b4ad169eca2564",
+        "android_client_info": {
+          "package_name": "com.example.revision"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxG5hMY8Cs3rKS7uMKvVY7pUzX20BC-Wo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

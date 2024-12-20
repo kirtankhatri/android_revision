@@ -2,6 +2,21 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE" />
+        </intent>
+    </queries>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,7 +26,52 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Revision"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
+        <activity
+            android:name=".posts"
+            android:exported="false" />
+        <activity
+            android:name=".WebViewDemo"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAXZ9rldVVH3Hx1ks4P40Krs5IddGVS4ZQ" />
+
+        <activity
+            android:name=".GoogleMapsDemo"
+            android:exported="false" />
+        <activity
+            android:name=".Animation"
+            android:exported="false" />
+        <activity
+            android:name=".Sensors"
+            android:exported="false" />
+        <activity
+            android:name=".VideoPlayback"
+            android:exported="false" />
+        <activity
+            android:name=".ImageCapture"
+            android:exported="false" />
+        <activity
+            android:name=".URLImageDownload"
+            android:exported="false" />
+        <activity
+            android:name=".TextToSpeechDemo"
+            android:exported="false" />
+        <activity
+            android:name=".MusicPlayerWakeLock"
+            android:exported="false" />
+        <activity
+            android:name=".AlarmManagerDemo"
+            android:exported="false" />
+        <activity
+            android:name=".BroadcastActivitiy"
+            android:exported="false" />
+        <activity
+            android:name=".CheckInternetActivtiy"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -21,6 +81,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <receiver
+            android:name=".BootCompleteBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".AlarmReceiver" />
     </application>
 
 </manifest>
